@@ -11,7 +11,7 @@ public class MyMain
 		frame.add(theComponent);
 		
 		frame.setSize(300, 400);
-		frame.setTitle("Java Gurus");
+		frame.setTitle("Java Projector");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}
