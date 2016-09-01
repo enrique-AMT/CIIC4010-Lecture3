@@ -9,19 +9,23 @@ public class MyComponent extends JComponent {
 	
 	public void paintComponent (Graphics g) {
 		
-		Car bottomRightCar = new Car(getWidth()-60,getHeight()-30);
+		MutableCar bottomRightCar = new MutableCar(getWidth()-60,getHeight()-30);
 		
-		Car topLeftCar = new Car(0,0);
-		
-		Car topRightCar = new Car(getWidth()-60,0);
-		
-		Car bottomLeftCar = new Car(0,getHeight()-30);
+//		MutableCar topLeftCar = new MutableCar(0,0);
+//		
+//		MutableCar topRightCar = new MutableCar(getWidth()-60,0);
+//		
+//		MutableCar bottomLeftCar = new MutableCar(0,getHeight()-30);
 		
 		bottomRightCar.draw(g);
-		bottomLeftCar.draw(g);
-		topRightCar.draw(g);
-		topLeftCar.draw(g);
+		bottomRightCar.setPosition(0,getHeight()-30);
+		bottomRightCar.draw(g);
 		
+		bottomRightCar.setPosition(getWidth()-60,0);
+		bottomRightCar.draw(g);
+		
+		bottomRightCar.setPosition(0,0);
+		bottomRightCar.draw(g);
 		
 		System.out.println(counter++);
 	}
