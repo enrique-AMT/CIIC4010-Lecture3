@@ -1,12 +1,14 @@
 import static org.junit.Assert.*;
 
+import java.awt.Color;
+
 import org.junit.Test;
 
 public class NewTester {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		
 	}
 	
 	@Test
